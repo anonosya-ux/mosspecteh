@@ -22,9 +22,11 @@ export function Header() {
                         <Phone className="h-4 w-4" />
                         +7 (985) 922-23-36
                     </a>
-                    <Button className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary-dark">
-                        Оставить заявку
-                    </Button>
+                    <a href="#quote-form">
+                        <Button className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary-dark">
+                            Оставить заявку
+                        </Button>
+                    </a>>
                     <button className="md:hidden p-2 text-foreground">
                         <Menu className="h-6 w-6" />
                     </button>

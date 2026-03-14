@@ -34,7 +34,9 @@ export function TechCard({ title, description, priceFrom, image, href }: TechCar
                         <Link href={href} className="flex-1">
                             <Button className="w-full bg-transparent border border-black/20 text-black hover:bg-black/5 h-11 px-0 sm:px-4 font-bold shadow-sm hover:shadow-md transition-all">Подробнее</Button>
                         </Link>
-                        <Button className="flex-1 bg-primary text-black hover:bg-[#e6b800] font-bold h-11 px-0 sm:px-4 shadow-sm hover:shadow-md transition-all">Заказать</Button>
+                        <a href="#quote-form" className="flex-1">
+                            <Button className="w-full bg-primary text-black hover:bg-[#e6b800] font-bold h-11 px-0 sm:px-4 shadow-sm hover:shadow-md transition-all">Заказать</Button>
+                        </a>
                     </div>
                 </div>
             </div>

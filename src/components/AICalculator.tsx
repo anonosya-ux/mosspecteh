@@ -48,7 +48,7 @@ export function AICalculator() {
 
         setBookingLoading(true);
         try {
-            await fetch("https://spectehmosobl.anonosya.workers.dev", {
+            await fetch("/api/lead", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

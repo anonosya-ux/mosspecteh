@@ -1,8 +1,20 @@
 import Link from 'next/link';
+import { LeadForm } from '@/components/LeadForm';
 
 export function Footer() {
     return (
-        <footer className="bg-card border-t border-border mt-auto">
+        <footer className="bg-card border-t border-border mt-auto relative" id="quote-form">
+            <div className="bg-[#111] text-white py-16">
+                <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
+                    <div className="max-w-xl">
+                        <h2 className="text-3xl md:text-5xl font-black mb-4">Остались вопросы?</h2>
+                        <p className="text-white/70 text-lg">Оставьте заявку, и мы перезвоним вам в течение 10 минут, чтобы бесплатно проконсультировать и рассчитать стоимость аренды под вашу задачу.</p>
+                    </div>
+                    <div className="w-full max-w-md">
+                        <LeadForm />
+                    </div>
+                </div>
+            </div>
             <div className="container mx-auto px-4 py-12 md:py-16">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>

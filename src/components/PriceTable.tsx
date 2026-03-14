@@ -31,7 +31,9 @@ export function PriceTable({ items, theme = 'dark' }: PriceTableProps) {
                                     {item.price.toLocaleString('ru-RU')} ₽ <span className="text-sm font-normal opacity-70">/ смена</span>
                                 </td>
                                 <td className="p-4 text-right">
-                                    <Button className={cn("whitespace-nowrap font-bold hover:shadow-md transition-all h-10 px-6", theme === 'light' ? "bg-primary text-black hover:bg-[#e6b800]" : "bg-primary text-black hover:bg-primary/90")}>Заказать</Button>
+                                    <a href="#quote-form">
+                                        <Button className={cn("whitespace-nowrap font-bold hover:shadow-md transition-all h-10 px-6", theme === 'light' ? "bg-primary text-black hover:bg-[#e6b800]" : "bg-primary text-black hover:bg-primary/90")}>Заказать</Button>
+                                    </a>
                                 </td>
                             </tr>
                         ))}
@@ -51,7 +53,9 @@ export function PriceTable({ items, theme = 'dark' }: PriceTableProps) {
                         </div>
                         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-3 gap-4">
                             <span className="font-bold text-xl tracking-tight">{item.price.toLocaleString('ru-RU')} ₽ <span className="text-sm font-normal opacity-70">/ смена</span></span>
-                            <Button className={cn("whitespace-nowrap w-full sm:w-auto font-bold shadow-sm hover:shadow-md transition-all h-10 px-6", theme === 'light' ? "bg-primary text-black hover:bg-[#e6b800]" : "bg-primary text-black hover:bg-primary/90")}>Заказать</Button>
+                            <a href="#quote-form" className="w-full sm:w-auto">
+                                <Button className={cn("whitespace-nowrap w-full font-bold shadow-sm hover:shadow-md transition-all h-10 px-6", theme === 'light' ? "bg-primary text-black hover:bg-[#e6b800]" : "bg-primary text-black hover:bg-primary/90")}>Заказать</Button>
+                            </a>
                         </div>
                     </div>
                 ))}
