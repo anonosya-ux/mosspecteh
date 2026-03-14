@@ -26,7 +26,7 @@ export function Header() {
                         <Button className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary-dark">
                             Оставить заявку
                         </Button>
-                    </a>>
+                    </a>
                     <button className="md:hidden p-2 text-foreground">
                         <Menu className="h-6 w-6" />
                     </button>
