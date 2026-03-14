@@ -1,4 +1,3 @@
-import { LeadForm } from "@/components/LeadForm";
 import { TechCard } from "@/components/TechCard";
 import { PricesTabs } from "@/components/PricesTabs";
 import { categoriesList } from "@/data/pricing";

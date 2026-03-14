@@ -25,16 +25,16 @@ export function TechCard({ title, description, priceFrom, image, href }: TechCar
                 <h3 className="text-xl font-bold mb-2 text-black">{title}</h3>
                 <p className="text-black/70 text-sm mb-6 flex-1 line-clamp-3 leading-relaxed">{description}</p>
 
-                <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mt-auto pt-4 border-t border-black/10 gap-4">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-auto pt-4 border-t border-black/10 gap-4">
                     <div>
                         <span className="text-xs text-black/50 block mb-1">Цена от</span>
                         <span className="text-xl font-black text-black whitespace-nowrap">{priceFrom.toLocaleString('ru-RU')} ₽/смена</span>
                     </div>
-                    <div className="flex gap-2 w-full sm:w-auto">
-                        <Link href={href} className="flex-1 sm:flex-none">
-                            <Button variant="outline" size="sm" className="w-full sm:w-auto border-black/20 text-black hover:bg-black hover:text-white">Подробнее</Button>
+                    <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+                        <Link href={href} className="w-full sm:w-auto">
+                            <Button variant="outline" className="w-full border-black/20 text-black hover:bg-black/5 h-10">Подробнее</Button>
                         </Link>
-                        <Button size="sm" className="flex-1 sm:flex-none bg-black text-white hover:bg-black/80 font-bold whitespace-nowrap">Заказать</Button>
+                        <Button className="w-full sm:w-auto bg-primary text-black hover:bg-[#e6b800] font-bold h-10 shadow-sm hover:shadow-md transition-all">Заказать</Button>
                     </div>
                 </div>
             </div>

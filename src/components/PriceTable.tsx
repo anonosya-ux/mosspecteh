@@ -31,7 +31,7 @@ export function PriceTable({ items, theme = 'dark' }: PriceTableProps) {
                                     {item.price.toLocaleString('ru-RU')} ₽ <span className="text-sm font-normal opacity-70">/ смена</span>
                                 </td>
                                 <td className="p-4 text-right">
-                                    <Button size="sm" className={cn("whitespace-nowrap", theme === 'light' ? "bg-black text-white hover:bg-black/80 font-bold" : "")}>Заказать</Button>
+                                    <Button className={cn("whitespace-nowrap font-bold hover:shadow-md transition-all h-10 px-6", theme === 'light' ? "bg-primary text-black hover:bg-[#e6b800]" : "bg-primary text-black hover:bg-primary/90")}>Заказать</Button>
                                 </td>
                             </tr>
                         ))}
@@ -49,9 +49,9 @@ export function PriceTable({ items, theme = 'dark' }: PriceTableProps) {
                                 <p className={cn("text-sm", theme === 'light' ? "text-black/70" : "text-muted-foreground")}>{item.spec1 || item.spec2}</p>
                             )}
                         </div>
-                        <div className="flex items-center justify-between mt-2 gap-4">
-                            <span className="font-bold text-xl whitespace-nowrap tracking-tight">{item.price.toLocaleString('ru-RU')} ₽ <span className="text-sm font-normal opacity-70">/ смена</span></span>
-                            <Button size="sm" className={cn("whitespace-nowrap shrink-0", theme === 'light' ? "bg-black text-white hover:bg-black/80 font-bold" : "")}>Заказать</Button>
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-3 gap-4">
+                            <span className="font-bold text-xl tracking-tight">{item.price.toLocaleString('ru-RU')} ₽ <span className="text-sm font-normal opacity-70">/ смена</span></span>
+                            <Button className={cn("whitespace-nowrap w-full sm:w-auto font-bold shadow-sm hover:shadow-md transition-all h-10 px-6", theme === 'light' ? "bg-primary text-black hover:bg-[#e6b800]" : "bg-primary text-black hover:bg-primary/90")}>Заказать</Button>
                         </div>
                     </div>
                 ))}
