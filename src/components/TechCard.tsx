@@ -25,16 +25,16 @@ export function TechCard({ title, description, priceFrom, image, href }: TechCar
                 <h3 className="text-xl font-bold mb-2 text-black">{title}</h3>
                 <p className="text-black/70 text-sm mb-6 flex-1 line-clamp-3 leading-relaxed">{description}</p>
 
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-auto pt-4 border-t border-black/10 gap-4">
+                <div className="mt-auto pt-5 border-t border-black/10 flex flex-col gap-4">
                     <div>
                         <span className="text-xs text-black/50 block mb-1">Цена от</span>
-                        <span className="text-xl font-black text-black whitespace-nowrap">{priceFrom.toLocaleString('ru-RU')} ₽/смена</span>
+                        <span className="text-2xl font-black text-black whitespace-nowrap">{priceFrom.toLocaleString('ru-RU')} ₽ <span className="text-sm font-normal opacity-70">/ смена</span></span>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
-                        <Link href={href} className="w-full sm:w-auto">
-                            <Button variant="outline" className="w-full border-black/20 text-black hover:bg-black/5 h-10">Подробнее</Button>
+                    <div className="flex gap-2 w-full">
+                        <Link href={href} className="flex-1">
+                            <Button className="w-full bg-transparent border border-black/20 text-black hover:bg-black/5 h-11 px-0 sm:px-4 font-bold shadow-sm hover:shadow-md transition-all">Подробнее</Button>
                         </Link>
-                        <Button className="w-full sm:w-auto bg-primary text-black hover:bg-[#e6b800] font-bold h-10 shadow-sm hover:shadow-md transition-all">Заказать</Button>
+                        <Button className="flex-1 bg-primary text-black hover:bg-[#e6b800] font-bold h-11 px-0 sm:px-4 shadow-sm hover:shadow-md transition-all">Заказать</Button>
                     </div>
                 </div>
             </div>
