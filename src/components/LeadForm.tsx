@@ -45,16 +45,16 @@ export function LeadForm() {
 
     if (success) {
         return (
-            <div className="bg-primary/10 border border-primary text-primary-foreground p-6 rounded-lg text-center">
-                <h3 className="font-bold text-xl mb-2 text-foreground">Заявка отправлена!</h3>
-                <p className="text-foreground">Мы свяжемся с вами в течение 10 минут для расчета стоимости.</p>
+            <div className="bg-green-500/10 border border-green-500 p-6 rounded-xl text-center bg-white">
+                <h3 className="font-bold text-xl mb-2 text-green-600">Заявка отправлена!</h3>
+                <p className="text-gray-700 font-medium">Мы свяжемся с вами в течение 10 минут для расчета стоимости.</p>
             </div>
         );
     }
 
     return (
-        <form onSubmit={handleSubmit} className="bg-card border border-border p-6 rounded-xl shadow-lg w-full max-w-md">
-            <h3 className="text-xl font-bold mb-4">Быстрый расчет стоимости</h3>
+        <form onSubmit={handleSubmit} className="bg-white border border-gray-200 p-6 rounded-xl shadow-lg w-full max-w-md">
+            <h3 className="text-xl font-bold mb-4 text-black">Быстрый расчет стоимости</h3>
             <div className="space-y-4">
                 <div>
                     <Input
@@ -63,6 +63,7 @@ export function LeadForm() {
                         placeholder="Ваше имя"
                         value={formData.name}
                         onChange={handleChange}
+                        className="bg-gray-50 border-gray-200 text-black placeholder:text-gray-400 focus-visible:ring-primary"
                     />
                 </div>
                 <div>
@@ -73,6 +74,7 @@ export function LeadForm() {
                         placeholder="+7 (999) 000-00-00"
                         value={formData.phone}
                         onChange={handleChange}
+                        className="bg-gray-50 border-gray-200 text-black placeholder:text-gray-400 focus-visible:ring-primary"
                     />
                 </div>
                 <div>
@@ -82,12 +84,13 @@ export function LeadForm() {
                         placeholder="Какая техника нужна?"
                         value={formData.equipment}
                         onChange={handleChange}
+                        className="bg-gray-50 border-gray-200 text-black placeholder:text-gray-400 focus-visible:ring-primary"
                     />
                 </div>
-                <Button disabled={loading} type="submit" className="w-full h-12 text-base shadow-md">
+                <Button disabled={loading} type="submit" className="w-full h-12 text-base shadow-md font-bold bg-primary text-black hover:bg-[#e6b800]">
                     {loading ? "Отправка..." : "Получить расчет"}
                 </Button>
-                <p className="text-xs text-muted-foreground text-center mt-4">
+                <p className="text-xs text-gray-500 text-center mt-4">
                     Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
                 </p>
             </div>

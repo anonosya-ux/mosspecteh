@@ -78,6 +78,89 @@ export default function Home() {
           <PricesTabs theme="light" />
         </div>
       </section>
+      {/* 4. SEO & USE CASES SECTION (DARK) */}
+      <section className="py-24 bg-[#111] text-white border-t border-white/10">
+        <div className="container mx-auto px-4">
+          <div className="mb-16 text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight">Для каких задач подойдет наша спецтехника?</h2>
+            <p className="text-lg text-white/60">Используйте алгоритмы подбора или ознакомьтесь с основными направлениями работ для популярных типов строительной техники.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Экскаваторы */}
+            <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors">
+              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
+                <div className="w-3 h-8 bg-primary rounded-full"></div>
+                Экскаваторы
+              </h3>
+              <p className="text-white/70 mb-4 leading-relaxed">
+                Незаменимы для земляных работ любой сложности. Доступна <strong>аренда экскаватора-погрузчика</strong> (универсален для стройки и уборки), <strong>аренда колесного экскаватора</strong> (мобилен в городе) и <strong>аренда гусеничного экскаватора</strong> (для бездорожья и тяжелых грунтов).
+              </p>
+              <ul className="text-sm text-white/50 space-y-2 font-medium">
+                <li>• Рытье котлованов, траншей, колодцев и септиков</li>
+                <li>• Планировка участков и выравнивание рельефа</li>
+                <li>• Погрузка сыпучих стройматериалов: песка, щебня, грунта</li>
+                <li>• Уборка и вывоз снега, строительного мусора</li>
+                <li>• Демонтаж старых фундаментов и зданий (с гидромолотом)</li>
+              </ul>
+            </div>
+
+            {/* Манипуляторы */}
+            <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors">
+              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
+                <div className="w-3 h-8 bg-primary rounded-full"></div>
+                Манипуляторы (КМУ)
+              </h3>
+              <p className="text-white/70 mb-4 leading-relaxed">
+                Заменяют сразу грузовик и кран, экономя ваш бюджет. Оформляя <strong>заказ манипулятора</strong>, вы получаете машину для погрузки, доставки и точной выгрузки на объекте. Отличная альтернатива раздельной аренде длинномера и автокрана.
+              </p>
+              <ul className="text-sm text-white/50 space-y-2 font-medium">
+                <li>• Перевозка бытовок, вагончиков, контейнеров</li>
+                <li>• Доставка кирпича, блоков, тротуарной плитки на паллетах</li>
+                <li>• Транспортировка станков, трансформаторов, кабельных катушек</li>
+                <li>• Перевозка пиломатериалов, труб, металлопроката</li>
+                <li>• Посадка крупномеров (деревьев) и ландшафтные работы</li>
+              </ul>
+            </div>
+
+            {/* Автокраны */}
+            <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors">
+              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
+                <div className="w-3 h-8 bg-primary rounded-full"></div>
+                Автокраны
+              </h3>
+              <p className="text-white/70 mb-4 leading-relaxed">
+                Мобильная подъемная техника для тяжелых грузов. <strong>Услуги автокрана 25 тонн, 32 тонны и выше</strong> востребованы как в масштабном монолитном строительстве, так и в частном секторе.
+              </p>
+              <ul className="text-sm text-white/50 space-y-2 font-medium">
+                <li>• Разгрузка фур, длинномеров с тяжелыми плитами или арматурой</li>
+                <li>• Монтаж металлоконструкций, ферм, сэндвич-панелей</li>
+                <li>• Подъем стройматериалов на высоту 2-го этажа и выше</li>
+                <li>• Установка ЖБИ колец, фундаментных блоков (ФБС), плит перекрытия</li>
+                <li>• Подача бетона в бадьях на перекрытия</li>
+              </ul>
+            </div>
+
+            {/* Автовышки */}
+            <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors">
+              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
+                <div className="w-3 h-8 bg-primary rounded-full"></div>
+                Автовышки (АГП)
+              </h3>
+              <p className="text-white/70 mb-4 leading-relaxed">
+                Безопасный подъем людей и инструмента на высоту. <strong>Аренда автовышки 18, 22 или 28 метров</strong> незаменима для фасадных, монтажных и коммунальных задач в условиях города.
+              </p>
+              <ul className="text-sm text-white/50 space-y-2 font-medium">
+                <li>• Ремонт и обслуживание фасадов, заделка швов, покраска</li>
+                <li>• Монтаж и демонтаж наружной рекламы, баннеров, вывесок</li>
+                <li>• Установка кондиционеров на глухих стенах и крышах</li>
+                <li>• Оклейка стекол, мойка окон на промышленных объектах</li>
+                <li>• Кронирование и спил аварийных деревьев, украшение елок</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
