@@ -65,18 +65,6 @@ export function Hero() {
                         </a>
                     </motion.div>
 
-                    {/* Hidden SEO block for broad keywords not naturally fitting in H1/subtitle while maintaining premium visual */}
-                    <motion.div
-                        className="sr-only"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                    >
-                        <h2>Комплексные услуги спецтехники</h2>
-                        <p>
-                            Оформляем прокат спецтехники, нанять спецтехнику, заказать строительную технику. Доступна аренда экскаватора-погрузчика, аренда колесного экскаватора, аренда гусеничного экскаватора. Рытье траншеи экскаватором, фасадные работы, вывоз мусора.
-                        </p>
-                    </motion.div>
-
                 </div>
             </div>
         </section>
