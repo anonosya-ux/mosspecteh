@@ -23,7 +23,7 @@ export default function ContactsPage() {
                 <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16">
 
                     <div>
-                        <h2 className="text-3xl font-bold mb-8">Наши реквизиты и связи</h2>
+                        <h2 className="text-3xl font-bold mb-8">Контактная информация</h2>
 
                         <div className="space-y-8 mb-12">
                             <div className="flex items-start gap-4">

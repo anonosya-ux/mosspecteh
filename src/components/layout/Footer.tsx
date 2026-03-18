@@ -52,8 +52,11 @@ export function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="border-t border-border mt-12 pt-8 text-sm text-center text-muted-foreground">
-                    © {new Date().getFullYear()} Спецтех Аренда. Все права защищены.
+                <div className="border-t border-border mt-12 pt-8 text-sm text-center text-muted-foreground flex flex-col md:flex-row items-center justify-between gap-4">
+                    <span>© {new Date().getFullYear()} Спецтех Аренда. Все права защищены.</span>
+                    <Link href="#" className="hover:text-primary transition-colors hover:underline">
+                        Политика конфиденциальности
+                    </Link>
                 </div>
             </div>
         </footer>
