@@ -61,7 +61,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-black text-white mb-4">Нейросеть подберет технику</h2>
             <p className="text-lg text-white/50 max-w-2xl mx-auto">
-              Опишите задачу, и наш ИИ-алгоритм мгновенно посчитает точную стоимость аренды, выбрав самую выгодную машину для вашего объекта.
+              Опишите задачу, и наш ИИ-алгоритм мгновенно посчитает ориентировочную стоимость аренды, выбрав самую выгодную машину для вашего объекта.
             </p>
           </div>
           <AICalculator />
