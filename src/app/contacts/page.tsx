@@ -32,7 +32,7 @@ export default function ContactsPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-xl mb-1">Телефон</h3>
-                                    <a href="tel:+79859222336" className="text-lg hover:text-primary transition-colors">+7 (985) 922-23-36</a>
+                                    <a href="tel:+79959222336" className="text-lg hover:text-primary transition-colors">+7 (995) 922-23-36</a>
                                 </div>
                             </div>
 
@@ -42,7 +42,7 @@ export default function ContactsPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-xl mb-1">E-mail</h3>
-                                    <a href="mailto:9859222336@mail.ru" className="text-lg hover:text-primary transition-colors">9859222336@mail.ru</a>
+                                    <a href="mailto:9959222336@mail.ru" className="text-lg hover:text-primary transition-colors">9959222336@mail.ru</a>
                                 </div>
                             </div>
 

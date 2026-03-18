@@ -33,8 +33,8 @@ export default function RootLayout({
     image: 'https://mosspecteh.ru/images/__project_spectech_moscow_landing__engine_nano_ban_delpmaspu.png',
     '@id': 'https://mosspecteh.ru',
     url: 'https://mosspecteh.ru',
-    telephone: '+79859222336',
-    email: '9859222336@mail.ru',
+    telephone: '+79959222336',
+    email: '9959222336@mail.ru',
     priceRange: 'от 16000 RUB',
     address: {
       '@type': 'PostalAddress',

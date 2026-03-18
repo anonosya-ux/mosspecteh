@@ -58,10 +58,10 @@ export function Hero() {
                         </a>
 
                         <a
-                            href="tel:+79859222336"
+                            href="tel:+79959222336"
                             className="inline-flex items-center justify-center px-8 py-4 font-bold text-primary hover:text-primary-dark transition-colors w-full sm:w-auto text-lg"
                         >
-                            +7 (985) 922-23-36
+                            +7 (995) 922-23-36
                         </a>
                     </motion.div>
 

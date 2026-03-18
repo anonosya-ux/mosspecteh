@@ -53,8 +53,8 @@ export function Footer() {
                     <div>
                         <h3 className="font-bold mb-4">Контакты</h3>
                         <ul className="space-y-2 text-sm">
-                            <li>+7 (985) 922-23-36</li>
-                            <li>9859222336@mail.ru</li>
+                            <li>+7 (995) 922-23-36</li>
+                            <li>9959222336@mail.ru</li>
                             <li>Москва и область</li>
                             <li>Работаем 24/7</li>
                         </ul>

@@ -26,9 +26,9 @@ export function Header() {
                 </nav>
 
                 <div className="flex items-center gap-4">
-                    <a href="tel:+79859222336" className="hidden md:flex items-center gap-2 font-bold hover:text-primary transition-colors">
+                    <a href="tel:+79959222336" className="hidden md:flex items-center gap-2 font-bold hover:text-primary transition-colors">
                         <Phone className="h-4 w-4" />
-                        +7 (985) 922-23-36
+                        +7 (995) 922-23-36
                     </a>
                     <a href="#quote-form" className="hidden md:inline-flex">
                         <Button className="bg-primary text-primary-foreground hover:bg-primary-dark">
@@ -54,9 +54,9 @@ export function Header() {
                         <Link href="/cranes" className="transition-colors hover:text-primary p-2 -mx-2 rounded-md hover:bg-muted" onClick={closeMenu}>Автокраны</Link>
                     </nav>
                     <div className="h-px bg-border my-2" />
-                    <a href="tel:+79859222336" className="flex items-center gap-2 font-bold text-foreground hover:text-primary transition-colors py-2" onClick={closeMenu}>
+                    <a href="tel:+79959222336" className="flex items-center gap-2 font-bold text-foreground hover:text-primary transition-colors py-2" onClick={closeMenu}>
                         <Phone className="h-5 w-5" />
-                        +7 (985) 922-23-36
+                        +7 (995) 922-23-36
                     </a>
                     <a href="#quote-form" onClick={closeMenu} className="w-full">
                         <Button className="w-full bg-primary text-primary-foreground hover:bg-primary-dark h-12 text-base">
